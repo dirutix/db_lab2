@@ -19,6 +19,5 @@ module.exports = function (sequelize, DataTypes) {
         models.Brand.hasMany(models.Model)
     }
 
-    Brand.sync();
     return Brand;
 }

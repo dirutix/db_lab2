@@ -19,6 +19,5 @@ module.exports = function (sequelize, DataTypes) {
         models.Model.belongsTo(models.Brand);
     };
 
-    Model.sync();
     return Model;
 }

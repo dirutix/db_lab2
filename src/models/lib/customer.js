@@ -19,6 +19,5 @@ module.exports = function (sequelize, DataTypes) {
         models.Customer.belongsTo(models.Model);
     }
 
-    Customer.sync();
     return Customer;
 }

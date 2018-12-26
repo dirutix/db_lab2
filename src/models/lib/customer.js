@@ -16,7 +16,7 @@ module.exports = function (sequelize, DataTypes) {
     });
 
     Customer.associate = (models) => {
-        Customer.belongsTo(models.Model);
+        models.Customer.belongsTo(models.Model);
     }
 
     Customer.sync();

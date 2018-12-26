@@ -1,5 +1,5 @@
 const Sequelize = require('sequelize');
-const sequelize = new Sequelize('postgres://postgres:11111111@localhost:5432/lab2');
+const sequelize = new Sequelize('postgres://postgres:1@localhost:5432/lab2');
 
 const fs = require('fs');
 const path = require('path');
@@ -24,6 +24,7 @@ Object.keys(db).forEach(modelName => {
     if (db[modelName].associate) {
         db[modelName].associate(db);
     }
+    db[modelName].sync();
 });
 
 
